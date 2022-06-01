@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas | Curso practico JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Figuras geometricas
+        </h1>
+        <form action="./">
+            <h2>Calculadora de area y perimetro de un Cuadrado</h2>
+            <label>Escribe cuanto mide cada lado de tu cuadrado: </label>
+            <input type="number" id="inputcuadrado">
+            <button type="button" onclick="calcularAreaCuadrado()" >Calcular area</button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perimetro</button>
+        </form>
+        <form action="./">
+            <h2>Calculadora de area y perimetro de un Triangulo</h2>
+            <label>lado1</label>
+            <input type="number" id="lado1Triangulo">
+            <label>lado2</label>
+            <input type="number" id="lado2Triangulo">
+            <label>base</label>
+            <input type="number" id="baseTriangulo">
+            <label>altura</label>
+            <input type="number" id="alturaTriangulo">
+            <button type="button" onclick="calcularAreaTriangulo()" >Calcular area</button>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perimetro</button>
+        </form>
+        <form action="./">
+            <h2>Calculadora de area y perimetro de un Circulo</h2>
+            <label>Escribe el radio del circulo</label>
+            <input type="number" id="radioCirculo">
+            <button type="button" onclick="calcularAreaCirculo()">Calcular area</button>
+            <button type="button" onclick="calcularPerimetroCirculo()" >Calcular perimetro</button>
+        </form>
+        <form action="./">
+            <h2>Calculadora de altura de un triangulo isóceles</h2>
+            <label>lado1</label>
+            <input type="number" id="lado1TrianguloIsosceles">
+            <label>lado2</label>
+            <input type="number" id="lado2TrianguloIsosceles">
+            <label>base</label>
+            <input type="number" id="baseTrianguloIsosceles">
+            <button type="button" onclick="calcularAlturaIsosceles()" >Calcular altura</button>
+        </form>
+    </header>
+    <script src="./figuras.js"></script>
+</body>
+</html>
